@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Power BI Report</title>
+  <style>
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+<iframe title="ركين إدارة القوى العاملة -V3" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=e508e049-a5ba-437c-9092-57d3959f72ea&autoAuth=true&ctid=4b406f13-3265-4229-9704-887aac1e6980" frameborder="0" allowFullScreen="true"></iframe>
+  <script>
+    function refreshReport() {
+      // Refresh the report by reloading the iframe source
+      document.getElementById('powerbi-embed').src = '[EMBEDDED_REPORT_URL]';
+    }
+
+    // Refresh the report every 5 minutes (300000 milliseconds)
+    setInterval(refreshReport, 2000);
+  </script>
+</body>
+</html>
